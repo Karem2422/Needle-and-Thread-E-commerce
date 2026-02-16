@@ -1,0 +1,65 @@
+name: needle_thread_app
+description: Needle & Thread E-Commerce Mobile App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # HTTP & API
+  dio: ^5.4.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  
+  # Image Handling
+  cached_network_image: ^3.3.1
+  image_picker: ^1.0.7
+  
+  # UI Components
+  cupertino_icons: ^1.0.6
+  
+  # Date & Number Formatting
+  intl: ^0.18.1
+  
+  # Navigation
+  go_router: ^13.0.0
+  
+  # Payment (PayPal)
+  flutter_paypal_payment: ^1.0.6
+  
+  # Utilities
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700
+    - family: Source Sans Pro
+      fonts:
+        - asset: assets/fonts/SourceSansPro-Regular.ttf
+        - asset: assets/fonts/SourceSansPro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SourceSansPro-Bold.ttf
+          weight: 700
